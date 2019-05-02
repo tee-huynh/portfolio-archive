@@ -1,0 +1,106 @@
+body {
+  	background-color: #fcfcfc;
+  	color: #1e1e1e;
+  	font-family: 'Raleway', sans-serif;
+  	font-weight: 300;
+}
+
+* {
+  	text-decoration: none;
+  	color: #1e1e1e;
+  	font-weight: 300;
+}
+
+.path {
+  stroke-dasharray: 1610;
+  stroke-dashoffset: 1610;
+  animation: dash 2s linear forwards;
+}
+
+p {
+	font-family: 'Gaegu', cursive;
+}
+
+/* The rolling text effect */
+.text-scroll h1 {
+  float: left;
+  height: 20px;
+  white-space: nowrap;
+  position: relative;
+  font-size: 20px;
+  margin-top: 22%;
+}
+
+.text-scroll {
+  max-height: 50px;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-left: 15%;
+  float: left;
+}
+
+.scrolling-words {
+  overflow: hidden;
+  height: 54px;
+  padding-left: 15px;
+  margin-top: 21%;
+}
+
+.scrolling-words  h1 {
+  margin: 0 0 30px;
+  font-weight: 400;
+  padding-top: 5px;
+  white-space: nowrap;
+  -webkit-animation: move 8s 1s infinite;
+  -moz-animation: move 8s 1s infinite;
+  -o-animation: move 8s 1s infinite;
+  -ms-animation: move 8s 1s infinite;
+  animation: move 8s 1s infinite;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@-moz-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
+}
+
+@-o-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
+}
+
+@-ms-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
+}
+
+@-webkit-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -53px;  }
+  40% { top: -109px; }
+  60% { top: -164px; }
+  80% { top: -0px;   }
+  100% { top: -0px;  }
+}
+
+@keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
+}
