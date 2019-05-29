@@ -493,13 +493,13 @@ p {
 
   list-style-type: none;
   margin-top: 0px;
-  margin-right: 20px;
+  margin-left: 100px;
   padding: 0;
 }
 
 .column2 li {
   font-size: 2vw;
-  float:right;
+  float:left;
   padding-right: 20px;
   display: inline;
 }
