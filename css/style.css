@@ -53,7 +53,8 @@ h3{
 }
 
 .header ul li a:hover {
-  font-weight: 800;
+  font-size: 1.5vw;
+  color: #8E7589;
   transition: 0.4s;
 }
 
@@ -233,8 +234,14 @@ p {
   text-align: center;
 }
 
+.grid-item2 {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
 .container {
-  position: relative;
+  position: relative; 
 }
 
 .image {
@@ -244,6 +251,28 @@ p {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+}
+
+.image3 {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image2 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #D6BDD1;
+  opacity: 1;
+  display: block;
+  width: 40vw;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .middle {
@@ -257,7 +286,22 @@ p {
   text-align: center;
 }
 
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20vh;
+  left: 28vw;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .image2 {
   opacity: 0.5;
 }
 
@@ -265,6 +309,9 @@ p {
   opacity: 1;
 }
 
+.container:hover .middle2 {
+  opacity: 1;
+}
 .caption {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 800;
@@ -299,58 +346,67 @@ p {
 
 #hci:hover {
   background-color: #F9D0D8;
+  transition: 0.4s;
 }
 
 #hci:hover .item-name {
-  background-color: #F9D0D8;
   color: white;
+  transition: 0.4s;
 }
 
 #hci:hover .item-caption {
-  background-color: #F9D0D8;
   color: white;
+  transition: 0.4s;
 }
 
 #viz:hover {
   background-color: #C0E6EF;
+  color: white;
+  transition: 0.4s;
 }
 
 #viz:hover .item-name {
-  background-color: #C0E6EF;
   color: white;
+  transition: 0.4s;
 }
 
 #viz:hover .item-caption {
-  background-color: #C0E6EF;
   color: white;
+  transition: 0.4s;
 }
 
 #web:hover {
   background-color: #EDCCEC;
+  color: white;
+  transition: 0.4s;
 }
 
 #web:hover .item-name {
-  background-color: #EDCCEC;
+  color: white;
+  transition: 0.4s;
   color: white;
 }
 
 #web:hover .item-caption {
-  background-color: #EDCCEC;
+  color: white;
+  transition: 0.4s;
   color: white;
 }
 
 #app:hover {
   background-color: #BDF7D3;
+  color: white;
+  transition: 0.4s;
 }
 
 #app:hover .item-name {
-  background-color: #BDF7D3;
   color: white;
+  transition: 0.4s;
 }
 
 #app:hover .item-caption {
-  background-color: #BDF7D3;
   color: white;
+  transition: 0.4s;
 }
 
 .item-name {
@@ -419,4 +475,115 @@ p {
   content: "";
   display: table;
   clear: both;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 ul {
+
+  list-style-type: none;
+  margin-top: 0px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.column2 li {
+  font-size: 2vw;
+  float:right;
+  padding-right: 20px;
+  display: inline;
+}
+
+.column2 #mail:hover {
+  color: #D44638;
+  transition: 0.4s;
+}
+
+.column2 #git:hover {
+  color: #6e5494;
+  transition: 0.4s;
+}
+
+.column2 #linked:hover {
+  color: #0077B5;
+  transition: 0.4s;
+}
+
+.column2 #pdf:hover {
+  color: #8E7589;
+  transition: 0.4s;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-title {
+  display: block;
+  padding: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  box-sizing: border-box;
+  color: #fcfcfc;
+  font-size: 3rem;
+  margin-right: 2rem;
+  width: 24rem;
+  height: 20rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+}
+
+.projects-list li {
+  list-style-type: none;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.projects-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8em;
+  text-decoration: none;
+}
+
+.projects-list div {
+  
+}
+
+.projects-list h3 {
+  font-family: 'League Script', sans-serif;
+  font-size: 2.4rem;
+  line-height: 10px;
+  margin: 0;
+}
+
+.projects-list i {
+  color: #211B17;
+  font-size: 2em;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-left: auto;
+  max-width: 80%;
+}
+
+.projects-list a:hover i {
+  color: #8E7589;
+  transition: 0.4s;
+}
+
+div a:hover i {
+  color: #8E7589;
+  transition: 0.4s;
 }
