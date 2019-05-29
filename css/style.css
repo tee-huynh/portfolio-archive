@@ -1,14 +1,124 @@
+
+
 body {
-  	background-color: #fcfcfc;
-  	color: #1e1e1e;
-  	font-family: 'Raleway', sans-serif;
-  	font-weight: 300;
+  display: flex;
+  background-color: #fcfcfc;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: #1e1e1e;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+h1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
+}
+
+h2{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+h3{
+  font-family: 'League Script', sans-serif;
+  font-size: 5vw;
 }
 
 * {
-  	text-decoration: none;
-  	color: #1e1e1e;
-  	font-weight: 300;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 300;
+}
+
+.header {
+  flex-basis: 10%;
+}
+
+.header ul {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  float:right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  padding-right: 50px;
+  display: inline;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 80%;
+  padding: 10px 10px 10px 10px;
+}
+
+.left {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left * {
+  margin-top: -50px;
+  align-self: center;
+  align: left;
+}
+
+.right {
+  margin-top: -50px;
+  margin-left: 40px;
+  padding: 10px 150px 10px 10px;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right li {
+  font-size: 2vw;
+  float:right;
+  padding-right: 20px;
+  display: inline;
+}
+
+.right #mail:hover {
+  color: #D44638;
+  transition: 0.4s;
+}
+
+.right #git:hover {
+  color: #6e5494;
+  transition: 0.4s;
+}
+
+.right #linked:hover {
+  color: #0077B5;
+  transition: 0.4s;
+}
+
+
+.footer {
+  flex-basis: 10%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
 }
 
 .path {
@@ -18,24 +128,23 @@ body {
 }
 
 p {
-	font-family: 'Gaegu', cursive;
+	font-family: 'Quicksand', sans-serif;
+  font-size: 1.5vw;
 }
 
-/* The rolling text effect */
-.text-scroll h1 {
-  float: left;
+.text-scroll h2 {
   height: 20px;
+  float: left;
   white-space: nowrap;
   position: relative;
-  font-size: 20px;
+  font-size: 2vw;
   margin-top: 22%;
 }
 
 .text-scroll {
   max-height: 50px;
-  max-width: 350px;
+  width: 300px;
   margin: 0 auto;
-  padding-left: 15%;
   float: left;
 }
 
@@ -43,12 +152,11 @@ p {
   overflow: hidden;
   height: 54px;
   padding-left: 15px;
-  margin-top: 21%;
+  margin-top: -30px;
 }
 
-.scrolling-words  h1 {
+.scrolling-words  h2 {
   margin: 0 0 30px;
-  font-weight: 400;
   padding-top: 5px;
   white-space: nowrap;
   -webkit-animation: move 8s 1s infinite;
@@ -56,7 +164,7 @@ p {
   -o-animation: move 8s 1s infinite;
   -ms-animation: move 8s 1s infinite;
   animation: move 8s 1s infinite;
-  font-size: 20px;
+  font-size: 2vw;
   letter-spacing: 1px;
 }
 
