@@ -1,16 +1,31 @@
+
+
 body {
   display: flex;
   background-color: #fcfcfc;
-  color: #1e1e1e;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  color: #1e1e1e;
   height: 100vh;
   width: 100vw;
   flex-direction: column;
 }
 
 h1{
-  font-size: 4vw;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
+}
+
+h2{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+h3{
+  font-family: 'League Script', sans-serif;
+  font-size: 5vw;
 }
 
 * {
@@ -21,6 +36,20 @@ h1{
 
 .header {
   flex-basis: 10%;
+}
+
+.header ul {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  float:right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  padding-right: 50px;
+  display: inline;
 }
 
 .body {
@@ -44,19 +73,43 @@ h1{
 }
 
 .right {
-  padding: 10px 100px 10px 10px;
+  margin-top: -50px;
+  margin-left: 40px;
+  padding: 10px 150px 10px 10px;
   display: flex;
   flex: 1 1 50%;
   flex-direction: column;
   justify-content: center;
 }
-.right .row {
-  margin-top: 30px;
-  width: 25%;
-  float: right;
-  align-self: flex-end;
-  flex-wrap: nowrap;
+
+.right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+.right li {
+  font-size: 2vw;
+  float:right;
+  padding-right: 20px;
+  display: inline;
+}
+
+.right #mail:hover {
+  color: #D44638;
+  transition: 0.4s;
+}
+
+.right #git:hover {
+  color: #6e5494;
+  transition: 0.4s;
+}
+
+.right #linked:hover {
+  color: #0077B5;
+  transition: 0.4s;
+}
+
 
 .footer {
   flex-basis: 10%;
@@ -75,72 +128,87 @@ h1{
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
-  font-size: 1.8vw;
+	font-family: 'Quicksand', sans-serif;
+  font-size: 1.5vw;
 }
 
-/* Social Icons */
-.universal-inline-block {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
+.text-scroll h2 {
+  height: 20px;
+  float: left;
+  white-space: nowrap;
+  position: relative;
+  font-size: 2vw;
+  margin-top: 22%;
 }
-.social-icons {
-  text-align: center;
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 1.5em;
-  color: #1e1e1e;
+
+.text-scroll {
+  max-height: 50px;
+  width: 300px;
+  margin: 0 auto;
+  float: left;
 }
-.social-icons h1 {
-  margin: 40px 0;
+
+.scrolling-words {
+  overflow: hidden;
+  height: 54px;
+  padding-left: 15px;
+  margin-top: -30px;
 }
-.social-icons ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+.scrolling-words  h2 {
+  margin: 0 0 30px;
+  padding-top: 5px;
+  white-space: nowrap;
+  -webkit-animation: move 8s 1s infinite;
+  -moz-animation: move 8s 1s infinite;
+  -o-animation: move 8s 1s infinite;
+  -ms-animation: move 8s 1s infinite;
+  animation: move 8s 1s infinite;
+  font-size: 2vw;
+  letter-spacing: 1px;
 }
-.social-icons ul li {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: middle;
+
+@-moz-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
 }
-.social-icons ul li a {
-  display: block;
-  font-size: 2.3vw;
-  margin: 0 5px;
-  text-decoration: none;
+
+@-o-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
 }
-.social-icons ul li a i {
-  color: #1e1e1e;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+
+@-ms-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
 }
-.social-icons ul li a:hover #linked {
-  color: #0077b5;
+
+@-webkit-keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -53px;  }
+  40% { top: -109px; }
+  60% { top: -164px; }
+  80% { top: -0px;   }
+  100% { top: -0px;  }
 }
-.social-icons ul li a:hover #git {
-  color: #6e5494;
-}
-.social-icons ul li a:hover #mail {
-  color: #D44638;
-}
-.social-icons ul li a:focus #linked,
-.social-icons ul li a:active #linked {
-  transition: none;
-  color: #0077b5;
-}
-.social-icons ul li a:focus #git,
-.social-icons ul li a:active #git {
-  transition: none;
-  color: #6e5494;
-}
-.social-icons ul li a:focus #mail,
-.social-icons ul li a:active #mail {
-  transition: none;
-  color: #D44638;
+
+@keyframes move {
+  0%  { top:  0px;   }
+  20% { top: -56px;  }
+  40% { top: -110px; }
+  60% { top: -167px; }
+  80% { top: -0px; }
+  100% { top: -0px;   }
 }
